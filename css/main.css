@@ -68,13 +68,9 @@ body {
    =================== */
 
 .header-container {
-    border-bottom: 20px solid #e44d26;
+    border-bottom: 0px solid #e44d26;
 }
 
-.footer-container,
-.main aside {
-    border-top: 20px solid #e44d26;
-}
 
 .header-container,
 .footer-container,
@@ -135,7 +131,7 @@ nav a:hover {
     padding: 0px 5% 10px;
 }
 
-.footer-container footer {
+footer {
     color: white;
     padding: 20px 0;
 }
@@ -153,8 +149,9 @@ nav a:hover {
    ========================================================================== */
 
 
-
-
+p, h1, h2, h3 {
+  text-align: center;
+}
 
 
 
@@ -211,12 +208,12 @@ nav a:hover {
     WIDE: CSS3 Effects
    ==================== */
 
-    .header-container,
+/*    .header-container,
     .main aside {
         -webkit-box-shadow: 0 5px 10px #aaa;
            -moz-box-shadow: 0 5px 10px #aaa;
                 box-shadow: 0 5px 10px #aaa;
-    }
+    }*/
 
 /* ============
     WIDE: Menu
@@ -237,7 +234,7 @@ nav a:hover {
 
     .main article {
         float: left;
-        width: 57%;
+        width: 100%;
     }
 
     .main aside {
@@ -369,3 +366,55 @@ nav a:hover {
         page-break-after: avoid;
     }
 }
+
+
+/*######################### 
+General
+#########################*/
+
+
+
+
+/*######################### 
+Navigation
+#########################*/
+
+
+
+
+/*######################### 
+Header
+#########################*/
+
+
+
+
+/*######################### 
+Footer
+#########################*/
+
+
+
+
+/*######################### 
+Page: Portfolio
+#########################*/
+
+
+
+/*######################### 
+Page: About
+#########################*/
+
+
+
+
+/*######################### 
+Page: Contact
+#########################*/
+
+
+
+/*######################### 
+Colours
+#########################*/
