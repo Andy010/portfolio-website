@@ -60,17 +60,14 @@ body {
   margin: 0;
 }
 
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
+.main {
   padding: 0;
 }
 
-.main {
+#main-container {
+  max-width: 100%;
   padding: 0;
+  margin: 0;
 }
 
 .main article h1 {
@@ -82,10 +79,18 @@ p, h1, h2, h3 {
   color: #2B2B2B;
 }
 
-#main-container {
-  max-width: 100%;
+p {
+  width: 90%;
+  margin: auto;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #2B2B2B;
   padding: 0;
-  margin: 0;
+  width: 90%;
 }
 
 /*######################### 
@@ -125,11 +130,23 @@ Header
 }
 
 .header-container, .main aside {
-    background: #FFF;
+  background: #FFF;
 }
 
 .title, h1 {
-    color: #2B2B2B;
+  color: #2B2B2B;
+  margin: 20px;
+}
+
+.title {
+  text-align: left;
+}
+
+.logo-header h1 {
+  font-weight: 300;
+  color: #FFF;
+  margin: 0 0 20px 0;
+  font-size: 2em;
 }
 
 /*######################### 
