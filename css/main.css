@@ -1,26 +1,32 @@
-html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+html { 
+  background: url(../img/bg-2.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
 }
 
 ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #000;
+  text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #5E5E5E;
+  text-shadow: none;
+  color: #FFF;
 }
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 audio,
@@ -29,24 +35,24 @@ iframe,
 img,
 svg,
 video {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 textarea {
-    resize: vertical;
+  resize: vertical;
 }
 
 .browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
 }
 
 
@@ -55,12 +61,12 @@ textarea {
    ========================================================================== */
 
 body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+  font: 16px/26px Helvetica, Helvetica Neue, Arial;
 }
 
 .wrapper {
-    width: 90%;
-    margin: 0 5%;
+  width: 90%;
+  margin: 0 5%;
 }
 
 /* ===================
@@ -68,18 +74,18 @@ body {
    =================== */
 
 .header-container {
-    border-bottom: 0px solid #e44d26;
 }
 
-
-.header-container,
-.footer-container,
-.main aside {
-    background: #f16529;
+.footer-container {
+  background-color: #5E5E5E;
 }
 
-.title {
-    color: white;
+.header-container, .main aside {
+    background: #FFF;
+}
+
+.title, .footer-container, h1 {
+    color: #2B2B2B;
 }
 
 /* ==============
@@ -87,31 +93,26 @@ body {
    ============== */
 
 nav ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 nav a {
-    display: block;
-    margin-bottom: 10px;
-    padding: 15px 0;
+  display: block;
+  margin-bottom: 10px;
+  padding: 15px 0;
 
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
 
-    color: white;
-    background: #e44d26;
-}
-
-nav a:hover,
-nav a:visited {
-    color: white;
+  color: #5E5E5E;
+  background: #D1D1D1;
 }
 
 nav a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* ==============
@@ -119,21 +120,21 @@ nav a:hover {
    ============== */
 
 .main {
-    padding: 30px 0;
+  padding: 0;
 }
 
 .main article h1 {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 .main aside {
-    color: white;
-    padding: 0px 5% 10px;
+  color: white;
+  padding: 0px 5% 10px;
 }
 
 footer {
-    color: white;
-    padding: 20px 0;
+  padding: 0;
+  background: #5E5E5E;
 }
 
 /* ===============
@@ -151,14 +152,34 @@ footer {
 
 p, h1, h2, h3 {
   text-align: center;
+  color: #2B2B2B;
+}
+
+footer h3 {
+  margin: 0;
+}
+
+.footer-container {
+  padding: 20px 0;
+}
+
+#main-container {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 
+.img-one {
+  background: url("../img/bg-1.png");
+  width: 100%;
+  height: 488px;
+  background-size: 1400px 2100px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
 
-
-
-
-
+  /*background-size: 322px 488px;*/
 
 
 
@@ -173,33 +194,33 @@ p, h1, h2, h3 {
     INTERMEDIATE: Menu
    ==================== */
 
-    nav a {
-        float: left;
-        width: 27%;
-        margin: 0 1.7%;
-        padding: 25px 2%;
-        margin-bottom: 0;
-    }
+nav a {
+  float: left;
+  width: 27%;
+  margin: 0 1.7%;
+  padding: 25px 2%;
+  margin-bottom: 0;
+}
 
-    nav li:first-child a {
-        margin-left: 0;
-    }
+nav li:first-child a {
+  margin-left: 0;
+}
 
-    nav li:last-child a {
-        margin-right: 0;
-    }
+nav li:last-child a {
+  margin-right: 0;
+}
 
 /* ========================
     INTERMEDIATE: IE Fixes
    ======================== */
 
-    nav ul li {
-        display: inline;
-    }
+nav ul li {
+  display: inline;
+}
 
-    .oldie nav a {
-        margin: 0 0.7%;
-    }
+.oldie nav a {
+  margin: 0 0.7%;
+}
 }
 
 @media only screen and (min-width: 768px) {
@@ -219,28 +240,28 @@ p, h1, h2, h3 {
     WIDE: Menu
    ============ */
 
-    .title {
-        float: left;
-    }
+.title {
+  float: left;
+}
 
-    nav {
-        float: right;
-        width: 38%;
-    }
+nav {
+  float: right;
+  width: 38%;
+}
 
 /* ============
     WIDE: Main
    ============ */
 
-    .main article {
-        float: left;
-        width: 100%;
-    }
+.main article {
+  float: left;
+  width: 100%;
+}
 
-    .main aside {
-        float: right;
-        width: 28%;
-    }
+.main aside {
+  float: right;
+  width: 28%;
+}
 }
 
 @media only screen and (min-width: 1140px) {
@@ -249,10 +270,10 @@ p, h1, h2, h3 {
     Maximal Width
    =============== */
 
-    .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
-        margin: 0 auto;
-    }
+.wrapper {
+  width: 1026px; /* 1140px - 10% for margins */
+  margin: 0 auto;
+}
 }
 
 /* ==========================================================================
@@ -260,47 +281,47 @@ p, h1, h2, h3 {
    ========================================================================== */
 
 .hidden {
-    display: none !important;
-    visibility: hidden;
+  display: none !important;
+  visibility: hidden;
 }
 
 .visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
 }
 
 .invisible {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 .clearfix:before,
 .clearfix:after {
-    content: " ";
-    display: table;
+  content: " ";
+  display: table;
 }
 
 .clearfix:after {
-    clear: both;
+  clear: both;
 }
 
 .clearfix {
-    *zoom: 1;
+  *zoom: 1;
 }
 
 /* ==========================================================================
@@ -308,63 +329,63 @@ p, h1, h2, h3 {
    ========================================================================== */
 
 @media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
+  *,
+  *:before,
+  *:after {
+      background: transparent !important;
+      color: #000 !important;
+      box-shadow: none !important;
+      text-shadow: none !important;
+  }
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
+  a,
+  a:visited {
+      text-decoration: underline;
+  }
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
+  a[href]:after {
+      content: " (" attr(href) ")";
+  }
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
+  abbr[title]:after {
+      content: " (" attr(title) ")";
+  }
 
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+      content: "";
+  }
 
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
+  pre,
+  blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+  }
 
-    thead {
-        display: table-header-group;
-    }
+  thead {
+      display: table-header-group;
+  }
 
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
+  tr,
+  img {
+      page-break-inside: avoid;
+  }
 
-    img {
-        max-width: 100% !important;
-    }
+  img {
+      max-width: 100% !important;
+  }
 
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
+  p,
+  h2,
+  h3 {
+      orphans: 3;
+      widows: 3;
+  }
 
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+  h2,
+  h3 {
+      page-break-after: avoid;
+  }
 }
 
 
