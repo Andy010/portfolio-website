@@ -1,3 +1,7 @@
+/*######################### 
+General
+#########################*/
+
 html { 
   background: url(../img/bg-2.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -18,15 +22,6 @@ html {
   background: #5E5E5E;
   text-shadow: none;
   color: #FFF;
-}
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
 }
 
 audio,
@@ -55,44 +50,46 @@ textarea {
   padding: 0.2em 0;
 }
 
-
-/* ===== Initializr Styles ==================================================
-   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
-   ========================================================================== */
-
 body {
   font: 16px/26px Helvetica, Helvetica Neue, Arial;
 }
 
 .wrapper {
-  width: 90%;
-  margin: 0 5%;
-}
-
-/* ===================
-    ALL: Orange Theme
-   =================== */
-
-.header-container {
-  position: fixed;
   width: 100%;
+  margin: 0;
 }
 
-.footer-container {
-  background-color: #5E5E5E;
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
-.header-container, .main aside {
-    background: #FFF;
+.main {
+  padding: 0;
 }
 
-.title, .footer-container, h1 {
-    color: #2B2B2B;
+.main article h1 {
+  font-size: 2em;
 }
 
-/* ==============
-    MOBILE: Menu
-   ============== */
+p, h1, h2, h3 {
+  text-align: center;
+  color: #2B2B2B;
+}
+
+#main-container {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/*######################### 
+Navigation
+#########################*/
 
 nav ul {
   margin: 0;
@@ -117,59 +114,49 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* ==============
-    MOBILE: Main
-   ============== */
+/*######################### 
+Header
+#########################*/
 
-.main {
-  padding: 0;
+.header-container {
+  position: fixed;
+  width: 100%;
 }
 
-.main article h1 {
-  font-size: 2em;
+.header-container, .main aside {
+    background: #FFF;
 }
 
-.main aside {
-  color: white;
-  padding: 0px 5% 10px;
+.title, h1 {
+    color: #2B2B2B;
+}
+
+/*######################### 
+Footer
+#########################*/
+
+.footer-container {
+  background-color: #5E5E5E;
+  padding: 20px 0;
 }
 
 footer {
   padding: 0;
-  background: #5E5E5E;
-}
-
-/* ===============
-    ALL: IE Fixes
-   =============== */
-
-.ie7 .title {
-    padding-top: 20px;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-p, h1, h2, h3 {
-  text-align: center;
-  color: #2B2B2B;
+  background-color: #5E5E5E;
 }
 
 footer h3 {
   margin: 0;
+  color: white;
 }
 
-.footer-container {
-  padding: 20px 0;
+.footer-text {
+  color: white;
 }
 
-#main-container {
-  max-width: 100%;
-  padding: 0;
-  margin: 0;
-}
+/*######################### 
+Imgs
+#########################*/
 
 .logo {
   width: 100%;
@@ -180,109 +167,87 @@ footer h3 {
 .logo img {
   width: 40%;
   height: 40%;
-  margin: 30px auto;
+  margin: 80px 0;
 }
 
-  /*background-size: 322px 488px;*/
-
-
-
-
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
+/*######################### 
+Media Queries
+#########################*/
 
 @media only screen and (min-width: 480px) {
 
-/* ====================
-    INTERMEDIATE: Menu
-   ==================== */
+  nav a {
+    float: left;
+    width: 27%;
+    margin: 0 1.7%;
+    padding: 25px 2%;
+    margin-bottom: 0;
+  }
 
-nav a {
-  float: left;
-  width: 27%;
-  margin: 0 1.7%;
-  padding: 25px 2%;
-  margin-bottom: 0;
-}
+  nav li:first-child a {
+    margin-left: 0;
+  }
 
-nav li:first-child a {
-  margin-left: 0;
-}
-
-nav li:last-child a {
-  margin-right: 0;
-}
-
-/* ========================
-    INTERMEDIATE: IE Fixes
-   ======================== */
-
-nav ul li {
-  display: inline;
-}
-
-.oldie nav a {
-  margin: 0 0.7%;
-}
+  nav li:last-child a {
+    margin-right: 0;
+  }
 }
 
 @media only screen and (min-width: 768px) {
 
-/* ====================
-    WIDE: CSS3 Effects
-   ==================== */
+  .title {
+    float: left;
+  }
 
-/*    .header-container,
-    .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
-    }*/
+  nav {
+    float: right;
+    width: 38%;
+  }
 
-/* ============
-    WIDE: Menu
-   ============ */
+  .main article {
+    float: left;
+    width: 100%;
+  }
 
-.title {
-  float: left;
-}
-
-nav {
-  float: right;
-  width: 38%;
-}
-
-/* ============
-    WIDE: Main
-   ============ */
-
-.main article {
-  float: left;
-  width: 100%;
-}
-
-.main aside {
-  float: right;
-  width: 28%;
-}
+  .main aside {
+    float: right;
+    width: 28%;
+  }
 }
 
 @media only screen and (min-width: 1140px) {
 
-/* ===============
-    Maximal Width
-   =============== */
+  .wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
 
-.wrapper {
-  width: 1026px; /* 1140px - 10% for margins */
-  margin: 0 auto;
-}
 }
 
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
+/*######################### 
+Page: 
+#########################*/
+
+
+/*######################### 
+Colour Scheme
+#########################*/
+/*
+
+#FFFFFF White
+#D1D1D1 Light Grey
+#AAAAAA Medium Grey
+#5E5E5E Dark/Medium Grey
+#2B2B2B Dark Grey
+#000000 Black
+
+#008ED6 Blue
+
+*/
+
+/*######################### 
+Helper classes
+#########################*/
 
 .hidden {
   display: none !important;
@@ -328,9 +293,29 @@ nav {
   *zoom: 1;
 }
 
-/* ==========================================================================
-   Print styles
-   ========================================================================== */
+/*######################### 
+INTERMEDIATE: IE Fixes
+#########################*/
+
+nav ul li {
+  display: inline;
+}
+
+.oldie nav a {
+  margin: 0 0.7%;
+}
+
+/*######################### 
+ALL: IE Fixes
+#########################*/
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/*######################### 
+Print styles
+#########################*/
 
 @media print {
   *,
@@ -393,53 +378,4 @@ nav {
 }
 
 
-/*######################### 
-General
-#########################*/
 
-
-
-
-/*######################### 
-Navigation
-#########################*/
-
-
-
-
-/*######################### 
-Header
-#########################*/
-
-
-
-
-/*######################### 
-Footer
-#########################*/
-
-
-
-
-/*######################### 
-Page: Portfolio
-#########################*/
-
-
-
-/*######################### 
-Page: About
-#########################*/
-
-
-
-
-/*######################### 
-Page: Contact
-#########################*/
-
-
-
-/*######################### 
-Colours
-#########################*/
