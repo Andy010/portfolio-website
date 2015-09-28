@@ -158,7 +158,7 @@ h1 {
 .title {
   text-align: left;
   color: #2B2B2B;
-  margin: 20px;
+  margin: 14px 20px;
   padding: 0;
 }
 
@@ -234,6 +234,7 @@ Media Queries
   nav li:last-child a {
     margin-right: 0;
   }
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -256,6 +257,7 @@ Media Queries
     float: right;
     width: 28%;
   }
+
 }
 
 @media only screen and (min-width: 1140px) {
@@ -308,8 +310,7 @@ Helper classes
   width: 1px;
 }
 
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
   clip: auto;
   height: auto;
   margin: 0;
@@ -322,8 +323,7 @@ Helper classes
   visibility: hidden;
 }
 
-.clearfix:before,
-.clearfix:after {
+.clearfix:before, .clearfix:after {
   content: " ";
   display: table;
 }
@@ -361,17 +361,14 @@ Print styles
 #########################*/
 
 @media print {
-  *,
-  *:before,
-  *:after {
+  *, *:before, *:after {
     background: transparent !important;
     color: #000 !important;
     box-shadow: none !important;
     text-shadow: none !important;
   }
 
-  a,
-  a:visited {
+  a, a:visited {
     text-decoration: underline;
   }
 
@@ -383,8 +380,7 @@ Print styles
     content: " (" attr(title) ")";
   }
 
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
+  a[href^="#"]:after, a[href^="javascript:"]:after {
     content: "";
   }
 
@@ -413,4 +409,5 @@ Print styles
   h2, h3 {
     page-break-after: avoid;
   }
+
 }
