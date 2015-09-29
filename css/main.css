@@ -82,7 +82,7 @@ p, h1, h2, h3 {
 p {
   width: 90%;
   margin: 10px auto 0;
-  padding: 0 0 25px 0;
+  padding: 0;
 }
 
 
@@ -110,6 +110,10 @@ hr {
   margin-bottom: -5px;
 }
 
+article {
+  padding-bottom: 25px;
+}
+
 /*######################### 
 Navigation
 #########################*/
@@ -130,21 +134,21 @@ nav ul {
 nav a {
   float: right;
   display: inline-block;
-  margin: 0 10px 0 10px;
-  padding: 33px 25px;
+  margin: 0 5px;
+  padding: 9px;
   
   text-align: center;
   text-decoration: none;
   color: #5E5E5E;
-  background: #D1D1D1;
+  background: #FFF;
 }
 
 nav li:first-child a {
-  margin-right: 0;
+  margin-right: 10px;
 }
 
 nav li:last-child a {
-  margin-left: 0;
+  margin-left: 5px;
 }
 
 nav a:hover {
@@ -167,9 +171,9 @@ Header
 .title-logo {
   text-align: left;
   color: #2B2B2B;
-  margin: 14px 20px;
+  margin: 10px;
   padding: 0;
-  height: 60px;
+  height: 20px;
   width: auto;
 
 }
@@ -182,8 +186,12 @@ Header
   padding: 0;
 }
 
+#header-upper {
+  margin-top: 50px;
+}
+
 #header-lower {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .fix-header {
@@ -214,6 +222,7 @@ footer p {
   color: white;
   padding: 0;
   text-align: center;
+  font-weight: 300;
 }
 
 .footer-text {
