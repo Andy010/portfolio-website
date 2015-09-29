@@ -115,23 +115,23 @@ Navigation
 #########################*/
 
 nav {
-  float: right;
-  width: 38%;
+  position:absolute;
+  top:0;
+  right:0;
+  width: 100%;
 }
 
 nav ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  width: 100%;
 }
 
 nav a {
-  float: left;
-  display: block;
-  margin: 0 1.7%;
-  padding: 25px 2%;
-  width: 27%;
+  float: right;
+  display: inline-block;
+  margin: 0 10px 0 10px;
+  padding: 33px 25px;
   
   text-align: center;
   text-decoration: none;
@@ -140,11 +140,11 @@ nav a {
 }
 
 nav li:first-child a {
-  margin-left: 0;
+  margin-right: 0;
 }
 
 nav li:last-child a {
-  margin-right: 0;
+  margin-left: 0;
 }
 
 nav a:hover {
@@ -209,9 +209,11 @@ footer {
   background-color: #5E5E5E;
 }
 
-footer h3 {
-  margin: 0;
+footer p {
+  margin: 0 auto;
   color: white;
+  padding: 0;
+  text-align: center;
 }
 
 .footer-text {
