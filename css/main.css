@@ -85,6 +85,7 @@ p {
   padding: 0 0 25px 0;
 }
 
+
 hr {
   display: block;
   height: 1px;
@@ -113,23 +114,37 @@ hr {
 Navigation
 #########################*/
 
+nav {
+  float: right;
+  width: 38%;
+}
+
 nav ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  width: 100%;
 }
 
 nav a {
+  float: left;
   display: block;
-  margin-bottom: 10px;
-  padding: 15px 0;
-
+  margin: 0 1.7%;
+  padding: 25px 2%;
+  width: 27%;
+  
   text-align: center;
   text-decoration: none;
-  font-weight: bold;
-
   color: #5E5E5E;
   background: #D1D1D1;
+}
+
+nav li:first-child a {
+  margin-left: 0;
+}
+
+nav li:last-child a {
+  margin-right: 0;
 }
 
 nav a:hover {
@@ -149,17 +164,14 @@ Header
   background: #FFF;
 }
 
-h1 {
-  color: #2B2B2B;
-  margin: 0 auto;
-  padding: 25px 0;
-}
-
-.title {
+.title-logo {
   text-align: left;
   color: #2B2B2B;
   margin: 14px 20px;
   padding: 0;
+  height: 60px;
+  width: auto;
+
 }
 
 .logo-header h1 {
@@ -172,6 +184,15 @@ h1 {
 
 #header-lower {
   margin-bottom: 50px;
+}
+
+.fix-header {
+  padding: 20px;
+  margin: 0;
+}
+
+#fix-header-title {
+  margin-top: 0;
 }
 
 /*######################### 
@@ -214,38 +235,29 @@ Imgs
 }
 
 /*######################### 
-Media Queries
+Media Queries - Mobile
 #########################*/
 
 @media only screen and (min-width: 480px) {
 
-  nav a {
-    float: left;
-    width: 27%;
-    margin: 0 1.7%;
-    padding: 25px 2%;
-    margin-bottom: 0;
-  }
-
-  nav li:first-child a {
-    margin-left: 0;
-  }
-
-  nav li:last-child a {
-    margin-right: 0;
+  .section-img {
+    margin-bottom: -5px;
   }
 
 }
 
+/*######################### 
+Media Queries - Tablet
+#########################*/
+
 @media only screen and (min-width: 768px) {
 
-  .title {
-    float: left;
+  .section-img {
+    margin-bottom: -5px;
   }
 
-  nav {
-    float: right;
-    width: 38%;
+  .title-logo {
+    float: left;
   }
 
   .main article {
@@ -259,6 +271,10 @@ Media Queries
   }
 
 }
+
+/*######################### 
+Media Queries - Desktop
+#########################*/
 
 @media only screen and (min-width: 1140px) {
 
@@ -352,7 +368,7 @@ nav ul li {
 ALL: IE Fixes
 #########################*/
 
-.ie7 .title {
+.ie7 .title-logo {
   padding-top: 20px;
 }
 
@@ -376,8 +392,8 @@ Print styles
     content: " (" attr(href) ")";
   }
 
-  abbr[title]:after {
-    content: " (" attr(title) ")";
+  abbr[title-logo]:after {
+    content: " (" attr(title-logo) ")";
   }
 
   a[href^="#"]:after, a[href^="javascript:"]:after {
