@@ -249,10 +249,20 @@ Imgs
 Media Queries - Mobile
 #########################*/
 
-@media only screen and (min-width: 480px) {
+@media only screen and (max-width: 640px) {
 
   .section-img {
     margin-bottom: -5px;
+  }
+
+  .logo img {
+    width: 70% !important;
+    height: 70% !important;
+  }
+
+  .logo-header h1 {
+    margin-right: 30px !important;
+    margin-left: 30px !important;
   }
 
 }
