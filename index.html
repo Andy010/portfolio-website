@@ -12,43 +12,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link href='https://fonts.googleapis.com/css?family=Lato:400italic,300,400' rel='stylesheet' type='text/css'>
-
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link href="css/form.css" rel="stylesheet">
   <link rel="shortcut icon" href="img/logo-favicon.png">
-
   <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
   </head>
   <body>
   <!--[if lt IE 8]>
   <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
-
     <div class="header-container">
       <header class="wrapper clearfix">
         <a href="http://www.google.com">
         <img class="title-logo" src="img/logo-favicon.png"></a>
-        <nav>
+        <nav> <!-- NAV starts -->
           <ul>
             <li><a href="#contact" data-scroll="contact">Contact</a></li>
             <li><a href="#about" data-scroll="about">About Me</a></li>
             <li><a href="#portfolio" data-scroll="portfolio">Portfolio</a></li>
           </ul>
-        </nav>
+        </nav> <!-- NAV ends -->
       </header>
     </div>
-
     <div class="main-container">
       <section class="logo-header">
         <div class="logo">
-          <img src="img/logo.png">
+          <img src="img/logo.png"> <!-- LOGO -->
         </div>
         <h1 id="header-upper">Andy Gates</h1>
         <h1 id="header-lower">Graphic Designer & Front End Web Developer</h1>
       </section>
-
-      <div class="main wrapper clearfix">
+      <div class="main wrapper clearfix"> <!-- portfolio starts -->
         <section id="portfolio" data-anchor="portfolio">
           <article class="section-white">
             <header class="fix-header">
@@ -66,8 +61,8 @@
               </ul>
             </section>
           </article>
-        </section>
-        <section class="section-img" id="about" data-anchor="about">
+        </section> <!-- portfolio ends -->
+        <section class="section-img" id="about" data-anchor="about"> <!-- about starts -->
           <article>
             <header>
               <h1>About Me</h1>
@@ -79,75 +74,56 @@
               <p>I have lived in the Buckinghamshire area all my life except for living in London whilst at university.</p>
             </section>
           </article>
-        </section>
-        <section id="contact" data-anchor="contact">
+        </section> <!-- about ends -->
+        <section id="contact" data-anchor="contact"> <!-- contact section starts -->
           <article class="section-white">
             <header class="fix-header">
               <h1 id="fix-header-title">Contact</h1>
               <hr>
             </header>
-            <section>
-              
-<div id="form-main">
-        <div id="form-div">
-            
-            <h4>Contact me</h4>
- <p>If your interested in my work or have any questions please email me at <a href="mailto:contact@aaronpugh.co.uk">contact@andygates.co.uk</a> or fill in the contact form below.
-            
-       <form name="htmlform" method="post" action="html_form_send.php">
-         
-       <form class="form" id="form1">
-      
-      <p class="name">
-        <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
-      </p>
-      
-      <p class="email">
-        <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
-      </p>
-      
-      <p class="email">
-        <input name="telephone" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Telephone" />
-      </p>
-      
-      <p class="text">
-        <textarea name="comments" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comments"></textarea>
-      </p>
-      
-      
-      <div class="submit">
-        <input type="submit" value="SEND" id="button-blue"/>
-        <div class="ease"></div>
-      </div>
-    </form>
-  </div>
-        
-  
-
-    
-
-</div>
-              
+            <section> <!-- contact form -->      
+              <div id="form-main">
+                <div id="form-div">    
+                  <h4>Contact me</h4>
+                    <p>If your interested in my work or have any questions please email me at <a href="mailto:contact@aaronpugh.co.uk">contact@andygates.co.uk</a> or fill in the contact form below.
+                    <form name="htmlform" method="post" action="html_form_send.php"> 
+                    <form class="form" id="form1">
+                    </p>
+                    <p class="name">
+                      <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+                    </p>
+                    <p class="email">
+                      <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+                    </p>
+                    <p class="email">
+                      <input name="telephone" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Telephone" />
+                    </p>
+                    <p class="text">
+                      <textarea name="comments" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comments"></textarea>
+                    </p>
+                    <div class="submit">
+                      <input type="submit" value="SEND" id="button-blue"/>
+                      <div class="ease"></div>
+                    </div>
+                  </form>
+                </div>
+              </div> <!-- contact form ends -->
             </section>
           </article>
-        </section>
+        </section> <!-- contact section ends -->
       </div>
     </div> <!-- #main-container -->
-
-    <div class="footer-container">
+    <div class="footer-container"> <!-- footer starts -->
       <footer class="wrapper">
         <p>© Andy Gates 2015</p>
         <p>Designed and coded by me</p>
         <p>I retrain all right to work displayed on this website</p>
-      </footer>
+      </footer> <!-- footer ends -->
     </div>
-
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
     (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

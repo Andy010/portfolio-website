@@ -34,7 +34,6 @@
 
 .feedback-input {
 	color:#3c3c3c;
-	font-family: Helvetica, Arial, sans-serif;
 	font-weight:500;
 	font-size: 18px;
 	border-radius: 0;
@@ -120,7 +119,6 @@ input:focus, textarea:focus {
 }
 
 #button-blue{
-	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	float:left;
 	width: 33%;
 	border: #fbfbfb solid 4px;
