@@ -15,6 +15,7 @@
 
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <link href="css/form.css" rel="stylesheet">
   <link rel="shortcut icon" href="img/logo-favicon.png">
 
   <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -86,7 +87,47 @@
               <hr>
             </header>
             <section>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
+              
+<div id="form-main">
+        <div id="form-div">
+            
+            <h4>Contact me</h4>
+ <p>If your interested in my work or have any questions please email me at <a href="mailto:contact@aaronpugh.co.uk">contact@andygates.co.uk</a> or fill in the contact form below.
+            
+       <form name="htmlform" method="post" action="html_form_send.php">
+         
+       <form class="form" id="form1">
+      
+      <p class="name">
+        <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+      </p>
+      
+      <p class="email">
+        <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+      </p>
+      
+      <p class="email">
+        <input name="telephone" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Telephone" />
+      </p>
+      
+      <p class="text">
+        <textarea name="comments" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comments"></textarea>
+      </p>
+      
+      
+      <div class="submit">
+        <input type="submit" value="SEND" id="button-blue"/>
+        <div class="ease"></div>
+      </div>
+    </form>
+  </div>
+        
+  
+
+    
+
+</div>
+              
             </section>
           </article>
         </section>
