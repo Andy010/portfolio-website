@@ -112,6 +112,7 @@ hr {
   background-size: cover;
   display: inline-block;
   margin-bottom: -5px;
+  width: 100%;
 }
 
 article {
@@ -127,6 +128,7 @@ nav {
   top:0;
   right:0;
   width: 100%;
+  border-bottom:solid 1px #5e5e5e;
 }
 
 nav ul {
@@ -280,6 +282,29 @@ p a {
   color: #008ed6;
 }
 
+.submit {
+  margin: 0 auto;
+  color: #2b2b2b;
+  text-align: center;
+  width: 90%;
+}
+
+#button {
+  border: none;
+  padding: 10px;
+  width: 100%;
+}
+
+#button:hover{
+  background-color: #2b2b2b;
+  color: #FFF;
+}
+  
+.submit:hover {
+
+}
+
+
 #form-main{
 
 }
@@ -297,18 +322,6 @@ textarea {
 
 input:hover, textarea:hover,
 input:focus, textarea:focus {
-
-}
-
-#button{
-
-}
-
-#button:hover{
-
-}
-  
-.submit:hover {
 
 }
   
@@ -447,6 +460,11 @@ Media Queries - Mobile
   .feedback-input {
     width: 90%;
   }
+
+  #button {
+    width: 97%;
+  }
+
 }
 
 /*######################### 
@@ -485,6 +503,11 @@ Media Queries - Tablet
     height: 300px;
     margin: 0 1px;
   }
+
+  #button {
+    width: 99%;
+  }
+
 }
 
 /*######################### 
