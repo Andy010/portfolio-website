@@ -81,7 +81,8 @@ p, h1, h2, h3 {
 
 p {
   width: 90%;
-  margin: 10px auto 0;
+  margin: 0 auto;
+  margin-bottom: 15px;
   padding: 0;
 }
 
@@ -224,6 +225,133 @@ Portfolio
 }
 
 /*######################### 
+Contact
+#########################*/
+
+@charset "UTF-8";
+
+#name p {
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#name {
+  width: 97%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+#email p {
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#email {
+  width: 97%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+#text p {
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#text textarea{
+  width: 97%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+#form-main{
+
+}
+
+#form-div {
+
+}
+
+.feedback-input {
+
+}
+
+.feedback-input:focus{
+
+}
+
+textarea {
+
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+
+}
+
+#button{
+
+}
+
+#button:hover{
+
+}
+  
+.submit:hover {
+
+}
+  
+.ease {
+
+}
+
+.submit:hover .ease{
+
+}
+
+/* Icons */
+
+/*#name{
+  background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+#name:focus{
+  background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+  background-size: 30px 30px;
+  background-position: 8px 5px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+#email{
+  background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+#email:focus{
+  background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+#comment{
+  background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}*/
+
+/* Icons */
+
+/*######################### 
 Footer
 #########################*/
 
@@ -288,6 +416,24 @@ Media Queries - Mobile
   hr {
   width: 90%;
   }
+
+  #name {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+#email p {
+  display: inline-block;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#email {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+}
 
 }
 
