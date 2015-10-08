@@ -230,13 +230,20 @@ Contact
 
 @charset "UTF-8";
 
+#name {
+  width: 97%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
 #name p {
   display: inline-block;
   width: 100%;
   margin: 0 auto;
+  border: 5px;
 }
 
-#name {
+#email {
   width: 97%;
   margin: 0 auto;
   padding: 10px;
@@ -248,22 +255,29 @@ Contact
   margin: 0 auto;
 }
 
-#email {
-  width: 97%;
+.feedback-input {
+  width: 97.1%;
   margin: 0 auto;
   padding: 10px;
 }
 
-#text p {
-  display: inline-block;
-  width: 100%;
-  margin: 0 auto;
+textarea, input {
+  border:solid 2px;
+  border-color: #D1D1D1;
+  overflow: auto;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 
-#text textarea{
-  width: 97%;
-  margin: 0 auto;
-  padding: 10px;
+textarea, input:hover {
+  border-color: ;
+}
+
+p a {
+  text-decoration: none;
+  color: #008ed6;
 }
 
 #form-main{
@@ -274,16 +288,11 @@ Contact
 
 }
 
-.feedback-input {
-
-}
-
 .feedback-input:focus{
 
 }
 
 textarea {
-
 }
 
 input:hover, textarea:hover,
@@ -414,27 +423,30 @@ Media Queries - Mobile
   }
 
   hr {
-  width: 90%;
+    width: 90%;
   }
 
   #name {
-  width: 90%;
-  margin: 0 auto;
-  padding: 10px;
-}
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+  }
 
-#email p {
-  display: inline-block;
-  width: 90%;
-  margin: 0 auto;
-}
+  #email p {
+    display: inline-block;
+    width: 90%;
+    margin: 0 auto;
+  }
 
-#email {
-  width: 90%;
-  margin: 0 auto;
-  padding: 10px;
-}
+  #email {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+  }
 
+  .feedback-input {
+    width: 90%;
+  }
 }
 
 /*######################### 
