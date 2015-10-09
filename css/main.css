@@ -82,7 +82,7 @@ p, h1, h2, h3 {
 p {
   width: 90%;
   margin: 0 auto;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   padding: 0;
 }
 
@@ -129,6 +129,7 @@ nav {
   right:0;
   width: 100%;
   border-bottom:solid 1px #5e5e5e;
+  background-color: #FFF;
 }
 
 nav ul {
@@ -142,7 +143,6 @@ nav a {
   display: inline-block;
   margin: 0 5px;
   padding: 9px;
-  
   text-align: center;
   text-decoration: none;
   color: #5E5E5E;
@@ -161,6 +161,16 @@ nav a:hover {
   text-decoration: underline;
 }
 
+.nav-logo {
+  position: absolute;
+  left: 0px;
+  text-align: left;
+  padding: 10px;
+  height: 20px;
+  width: auto;
+  z-index: 100;
+}
+
 /*######################### 
 Header
 #########################*/
@@ -172,16 +182,6 @@ Header
 
 .header-container, .main aside {
   background: #FFF;
-}
-
-.title-logo {
-  text-align: left;
-  color: #2B2B2B;
-  margin: 10px;
-  padding: 0;
-  height: 20px;
-  width: auto;
-
 }
 
 .logo-header h1 {
@@ -420,6 +420,14 @@ Media Queries - Mobile
 #########################*/
 
 @media only screen and (max-width: 640px) {
+
+  html { 
+    background: url(../img/mobile-bg.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 
   .section-img {
     margin-bottom: -5px;
