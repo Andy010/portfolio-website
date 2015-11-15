@@ -5,9 +5,53 @@ General
 html {
 	background: none;
 	background-color: #d1d1d1;
+	margin-top: 0;
+	padding-top: 0;
+	border-top: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
 }
 
 /*######################### 
 Box
 #########################*/
 
+
+
+/*######################### 
+Media Queries - Mobile
+#########################*/
+
+@media only screen and (max-width: 640px) {
+
+	nav {
+		position: absolute;
+		top: -5px;
+	}
+
+	.nav-logo {
+		padding-top: 5px;
+	}
+
+}
+
+/*######################### 
+Media Queries - Tablet
+#########################*/
+
+@media only screen and (max-width: 768px) {
+
+	nav {
+		position: absolute;
+		top: -5px;
+	}
+
+	.nav-logo {
+		padding-top: 5px;
+	}
+
+}
