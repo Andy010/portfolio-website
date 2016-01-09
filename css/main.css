@@ -120,12 +120,12 @@ article {
   padding-bottom: 10px;
 }
 
-#icon-div {
+#linkedin-div {
   text-align: center;
   margin: 15px 0 0;
 }
 
-#icon {
+#linkedin-icon {
   height: 25px;
   margin: 0 auto;
 }
@@ -575,6 +575,7 @@ Colour Scheme
 /*
 
 #FFFFFF White
+#F0F0F0 Very Light Grey
 #D1D1D1 Light Grey
 #AAAAAA Medium Grey
 #5E5E5E Dark/Medium Grey
