@@ -221,11 +221,14 @@ Portfolio
 }
 
 .portfolio-section ul li {
-  background-color: blue;
-  padding: 25px;
-  margin: 5px 0;
+  padding: 0px;
+  margin: 5px;
   height: 300px;
+  width: auto;
+  text-align: center;
+
 }
+
 
 /*######################### 
 Contact
@@ -511,9 +514,10 @@ Media Queries - Tablet
 
   .portfolio-section ul li {
     display: inline-block;
-    width: 40%;
+    width: auto;
     height: 300px;
     margin: 0 1px;
+    margin-bottom: 5px;
   }
 
   #button {
@@ -541,9 +545,10 @@ Media Queries - Desktop
 
   .portfolio-section ul li {
     display: inline-block;
-    width: 26%;
+    width: auto;
     height: 300px;
     margin: 0 1px;
+    margin-bottom: 5px;
   }
 
 }
