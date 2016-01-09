@@ -120,6 +120,17 @@ article {
   padding-bottom: 10px;
 }
 
+#icon-div {
+  text-align: center;
+  margin: 15px 0 0;
+}
+
+#icon {
+  height: 25px;
+  margin: 0 auto;
+}
+
+
 /*######################### 
 Navigation
 #########################*/
