@@ -237,7 +237,19 @@ Portfolio
   height: 300px;
   width: auto;
   text-align: center;
+}
 
+#img-port { 
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);  /* For Webkit browsers */
+    filter: gray;  /* For IE 6 - 9 */
+    -webkit-transition: all .6s ease;  /* Transition for Webkit browsers */
+}
+
+#img-port:hover { 
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    filter: none;
 }
 
 
