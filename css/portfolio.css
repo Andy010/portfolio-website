@@ -40,6 +40,13 @@ Img
  margin: 0 0 15px 0;
 }
 
+#flag-img {
+ max-width: 80%;
+ max-height: 600px;
+ text-align: center;
+ margin: 0 0 15px 0;
+}
+
 /*######################### 
 Box
 #########################*/
