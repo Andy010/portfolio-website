@@ -142,6 +142,7 @@ nav {
   width: 100%;
   border-bottom:solid 1px #5e5e5e;
   background-color: #FFF;
+  z-index: 50;
 }
 
 nav ul {
@@ -159,6 +160,11 @@ nav a {
   text-decoration: none;
   color: #5E5E5E;
   background: #FFF;
+  -o-transition:.6s;
+  -ms-transition:.6s;
+  -moz-transition:.6s;
+  -webkit-transition:.6s;
+  transition:.6s;
 }
 
 nav li:first-child a {
@@ -171,6 +177,7 @@ nav li:last-child a {
 
 nav a:hover {
   text-decoration: underline;
+  color: #008ED6;
 }
 
 .nav-logo {
@@ -180,7 +187,7 @@ nav a:hover {
   padding: 10px;
   height: 20px;
   width: auto;
-  z-index: 100;
+  z-index: 99;
 }
 
 /*######################### 
@@ -239,17 +246,16 @@ Portfolio
   text-align: center;
 }
 
-#img-port { 
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);  /* For Webkit browsers */
-    filter: gray;  /* For IE 6 - 9 */
-    -webkit-transition: all .6s ease;  /* Transition for Webkit browsers */
+#img-port {
 }
 
-#img-port:hover { 
-    filter: grayscale(0%);
-    -webkit-filter: grayscale(0%);
-    filter: none;
+#img-port:hover {
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-filter: grayscale(100%); 
+  -moz-transition: .5s ease-in-out;
+  -o-filter: grayscale(100%); 
+  -o-transition: .5s ease-in-out;
 }
 
 
